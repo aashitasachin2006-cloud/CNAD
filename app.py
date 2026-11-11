@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     # Pass a sample variable to the HTML template
-    return render_template("index.html", title="My GitHub Web App", message="Hello from Flask!")
+    return render_template("index.html")
 
 if __name__ == "__main__":
     # Uses the PORT environment variable if deployed to a cloud host, otherwise defaults to 5000
